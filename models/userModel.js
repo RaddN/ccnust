@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 var bcrypt = require("bcryptjs");
-const { use } = require("../routes/userRoutes");
 const userSchema = new Schema(
   {
     name: {
@@ -40,7 +39,7 @@ const userSchema = new Schema(
     },
     longitude: String,
     latitude: String,
-    lastupdatetime:String
+    lastupdatetime: String,
   },
   {
     timestamps: true,
